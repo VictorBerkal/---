@@ -1,0 +1,21 @@
+@import 'libs/bootstrap-reboot.min';
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #343539;
+}
+input{
+    border: none;
+    outline: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/select';
+@import 'blocks/car';
+@import 'blocks/media';
+@import 'blocks/paragraph.scss';

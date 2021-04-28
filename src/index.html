@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <section>
+        <div class="car">
+            <div class="container">
+                <div class="car__wrapper">
+
+                    <div class="car-form">
+                        <form action="#">
+                            <h1 class='car-form__header'>FTL: Прямая машина</h1>
+
+                            <div class="car-form__paragraph paragraph">
+                                <div class="paragraph_num">1</div>
+                                <div class="paragraph_title">Маршрут</div>
+                            </div>
+
+                            <div class="car-form__input">
+                                <label for="from">Откуда</label>
+                                <input class="input-from" required name="from" id="from" type="text">
+                            </div>
+                            <div class="car-form__input">
+                                <label for="whither">Куда</label>
+                                <input class="input-whither" required name="whither" id="whither" type="text">
+                            </div>
+
+                            <div class="car-form__paragraph paragraph">
+                                <div class="paragraph_num">2</div>
+                                <div class="paragraph_title">Транспорт</div>
+                            </div>
+
+                            <div class="car-form__selects">
+                                <div class="car-form__select">
+                                    <label class='car-form__label' for="loading">Грузоподъёмность</label>
+                                    <div class="loading-select __select" data-state="">
+                                        <div class="loading-select__title __select__title" data-default="Option 0">Не выбрана</div>
+                                        <div class="loading-select__content">
+                                            <input id="loading_0" class="loading-select__input __select__input" type="radio" name="singleSelect" checked />
+                                            <label for="loading_0" class="loading-select__label __select__label"><p>Option 0</p></label>
+                                            <input id="loading_1" class="loading-select__input __select__input" type="radio" name="singleSelect" />
+                                            <label for="loading_1" class="loading-select__label __select__label"><p>Option 1</p></label>
+                                            <input id="loading_2" class="loading-select__input __select__input" type="radio" name="singleSelect" disabled />
+                                            <label for="loading_2" class="loading-select__label __select__label"><p>Option 2 (disabled)</p></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car-form__select">
+                                    <label class='car-form__label' for="method">Способ погрузки</label>
+                                    <div class="method-select __select" data-state="">
+                                        <div class="method-select__title __select__title" data-default="Option 0">Не выбран</div>
+                                        <div class="method-select__content">
+                                            <input id="method_0" class="method-select__input __select__input" type="radio" name="singleSelect" checked />
+                                            <label for="method_0" class="method-select__label __select__label"><p>Option 0</p></label>
+                                            <input id="method_1" class="method-select__input __select__input" type="radio" name="singleSelect" />
+                                            <label for="method_1" class="method-select__label __select__label"><p>Задняя</p></label>
+                                            <input id="method_2" class="method-select__input __select__input" type="radio" name="singleSelect" disabled />
+                                            <label for="method_2" class="method-select__label __select__label"><p>Option 2 (disabled)</p></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-form__paragraph paragraph_cargo paragraph">
+                                <div class="paragraph_num">3</div>
+                                <div class="paragraph_title">Груз</div>
+                            </div>
+
+                            
+                            <div class="car-form__select">
+                                <label class='car-form__label' for="way">Тип груза</label>
+                                <div class="way-select __select" data-state="">
+                                    <div class="way-select__title __select__title" data-default="Option 0">Не выбран</div>
+                                    <div class="way-select__content __select__content">
+                                        <input id="way_0" class="way-select__input __select__input" type="radio" name="singleSelect" checked />
+                                        <label for="way_0" class="way-select__label __select__label"><p>Option 1 Loooooooong.</p></label>
+                                        <input id="way_1" class="way-select__input __select__input" type="radio" name="singleSelect" />
+                                        <label for="way_1" class="way-select__label __select__label"><p>Option 1 Loooooooong.</p></label>
+                                        <input id="way_2" class="way-select__input __select__input" type="radio" name="singleSelect" disabled />
+                                        <label for="way_2" class="way-select__label __select__label"><p>Option 2 (disabled)</p></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-form__selects">
+                                <div class="car-form__select">
+                                    <label class='car-form__label' for="cls">Класс опасности</label>
+                                    <div class="cls-select __select" data-state="">
+                                        <div class="cls-select__title __select__title" data-default="Option 0">Не выбран</div>
+                                        <div class="cls-select__content">
+                                            <input id="cls_0" class="cls-select__input __select__input" type="radio" name="singleSelect" checked />
+                                            <label for="cls_0" class="cls-select__label __select__label">Option 0</label>
+                                            <input id="cls_1" class="cls-select__input __select__input" type="radio" name="singleSelect" />
+                                            <label for="cls_1" class="cls-select__label __select__label"><p>Option 1 Loooooooong.</p></label>
+                                            <input id="cls_2" class="cls-select__input __select__input" type="radio" name="singleSelect" disabled />
+                                            <label for="cls_2" class="cls-select__label __select__label"><p>Option 2 (disabled)</p></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 172px; margin: 0;" class="car-form__input">
+                                    <label for="comment">Объявленная ценность, ₽</label>
+                                    <input style="height: 40px;" placeholder=">1" class="input-from" required name="comment" id="comment" type="text">
+                                </div>
+                            </div>
+                            
+                            <div class="car-form__checkbox">
+                                <input class='custom-checkbox' type="checkbox" value="check" id="check">
+                                <label for="check">Требуется температурный режим</label>
+                            </div>
+
+
+                            <div class="car-form__paragraph paragraph_time paragraph">
+                                <div class="paragraph_num">4</div>
+                                <div class="paragraph_title">Время</div>
+                            </div>
+
+                            <div class="car-form__descr">
+                                <div>Когда прибыть на точку</div>
+                                <div>700 км в день</div>
+                            </div>
+
+                            <div class="car-form__cells">
+                                <div class="car-form__cell">
+                                    <div class="car-form-addres">
+                                        <div class="car-form-addres_sircle">
+                                            <input class='cust-sircle' type="checkbox" value="" id="sircle_2">
+                                            <label for="sircle_2"><p>Адрес не указан</p></label>
+                                        </div>
+                                    </div>
+                                    <div class="car-form_btn">
+                                        НЕ ВЫБРАНО
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-form__cells">
+                                <div class="car-form__cell">
+                                    <div class="car-form-addres">
+                                        <div class="car-form-addres_sircle">
+                                            <input class='cust-sircle' type="checkbox" value="" id="sircle">
+                                            <label for="sircle"><p>Адрес не указан</p></label>
+                                        </div>
+                                    </div>
+                                    <div class="car-form_btn">
+                                        НЕ ВЫБРАНО
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-form__input car-form__input">
+                                <label for="comment">Комментарий к заказу</label>
+                                <input placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу" class="input40px" class="input-from" required name="comment" id="comment" type="text">
+                            </div>                          
+
+                        </form>
+                    </div>
+
+                    <div class="car-info">
+                        <div>
+                            Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/index-min.js"></script>
+</body>
+</html>

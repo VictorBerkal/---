@@ -1,0 +1,30 @@
+.paragraph{
+    // margin-top: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    &_num{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        background: #EF483E;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+    }
+    &_cargo{
+        margin-top: 40px;
+    }
+    &_time{
+        margin-top: 40px;
+    }
+}
